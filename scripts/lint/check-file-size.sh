@@ -1,20 +1,23 @@
 #!/bin/bash
 
-echo "Checking file sizes..."
-
+TARGET_DIR=${1:-.}
 MAX_KB=5000
-failed=false
+
+echo "Checking file sizes inside: $TARGET_DIR ..."
+
+oversized=false
 
 while IFS= read -r file; do
   size_kb=$(du -k "$file" | cut -f1)
 
-  if [ "$size_kb" -gt "$MAX_KB" ]; then
-    echo "$file is too large: ${size_kb}KB (max ${MAX_KB}KB)"
-    failed=true
+  if (( size_kb > MAX_KB )); then
+    echo "File too large: $file (${size_kb}KB)"
+    oversized=true
   fi
-done < <(find design -type f -name "*.*")
+done < <(find "$TARGET_DIR" -type f)
 
-if [ "$failed" = true ]; then
+if [ "$oversized" = true ]; then
+  echo "File size check failed."
   exit 1
 fi
 

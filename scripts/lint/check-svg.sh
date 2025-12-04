@@ -4,7 +4,7 @@ echo "Validating SVG files..."
 
 failed=false
 
-for file in $(find design/assets/icons -name "*.svg"); do
+for file in $(find assets/icons -name "*.svg"); do
   if grep -Ei "<script|onload=|onclick=|onerror=" "$file" > /dev/null; then
     echo "Unsafe SVG found: $file"
     failed=true

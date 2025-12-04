@@ -15,4 +15,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Check file sizes
-        run: bash scripts/lint/check-file-size.sh
+        run: bash scripts/lint/check-file-size.sh .
