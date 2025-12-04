@@ -1,0 +1,36 @@
+name: Validate Analysis Repo
+
+# Trigger on every push
+on:
+  push:
+    branches:
+      - '**'  # All branches
+    paths:
+      - '**.md'
+      - 'templates/**'
+      - 'research/**'
+      - 'requirements/**'
+      - 'feasibility/**'
+
+jobs:
+  lint-and-template-check:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️ Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2️ Setup Node.js (needed for markdownlint)
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
+
+      # 3️ Install markdownlint-cli
+      - name: Install markdownlint
+        run: npm install -g markdownlint-cli
+
+      # 4️ Lint all Markdown files
+      - name: Lint all Markdown files
+        run: npx markdownlint '**/*.md' --ignore node_modules
