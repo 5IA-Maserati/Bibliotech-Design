@@ -1,0 +1,36 @@
+# Designer Repository
+
+Welcome to the Designer Repository!  
+This repository serves as the central place for UI/UX assets, design system components, templates, mockups, and documentation.
+
+## Repository Structure
+
+```
+Bibliotech-Design/
+├─ assets/ # Images, icons, illustrations
+├─ components/ # UI components, Sketch/Figma/Adobe XD templates
+├─ mockups/ # Project mockups
+├─ prototypes/ # Interactive prototypes
+├─ docs/ # Documentation, style guides, workflow instructions
+├─ branding/ # Logo, color palettes, fonts
+└─ README.md
+```
+
+## Design Principles
+
+- **Consistency:** All elements should follow the same style.
+- **Accessibility:** Colors, fonts, and contrast must meet accessibility standards.
+- **Responsiveness:** Designs must adapt to different screen sizes and devices.
+
+## File Naming & Versioning
+
+- Use lowercase, hyphen-separated filenames: `login-screen-v1.fig`
+- Keep versioning consistent: `v1`, `v2`, `final`
+
+## Contribution Guidelines
+
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before contributing to this repository.
+
+## License
+
+This repository is licensed under the MIT License. See [LICENSE](./LICENSE) for details.
