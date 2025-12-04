@@ -1,4 +1,4 @@
-name: Validate Analysis Repo
+name: Validate Markdown
 
 # Trigger on every push
 on:
