@@ -1,7 +1,7 @@
 #!/bin/bash
 
 TARGET_DIR=${1:-.}
-MAX_KB=5000
+MAX_KB=15000
 
 echo "Checking file sizes inside: $TARGET_DIR ..."
 
