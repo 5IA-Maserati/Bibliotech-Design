@@ -1,7 +1,7 @@
 name: Check Asset File Sizes
 
 on:
-  pull_request:
+  push:
     branches:
       - '**'  # All branches
     paths:
