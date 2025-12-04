@@ -37,4 +37,4 @@ jobs:
 
       # 6 Check file size limits
       - name: Check file sizes
-        run: bash scripts/lint/check-file-size.sh
+        run: bash scripts/security/check-file-size.sh
