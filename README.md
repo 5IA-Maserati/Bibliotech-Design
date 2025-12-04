@@ -1,6 +1,5 @@
-# Designer Repository
-
-Welcome to the Designer Repository!  
+# Bibliotech-Design
+ 
 This repository serves as the central place for UI/UX assets, design system components, templates, mockups, and documentation.
 
 ## Repository Structure
@@ -9,10 +8,8 @@ This repository serves as the central place for UI/UX assets, design system comp
 Bibliotech-Design/
 ├─ assets/ # Images, icons, illustrations
 ├─ components/ # UI components, Sketch/Figma/Adobe XD templates
-├─ mockups/ # Project mockups
 ├─ prototypes/ # Interactive prototypes
 ├─ docs/ # Documentation, style guides, workflow instructions
-├─ branding/ # Logo, color palettes, fonts
 └─ README.md
 ```
 
