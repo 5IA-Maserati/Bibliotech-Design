@@ -1,0 +1,33 @@
+# ========================
+# System files
+# ========================
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+*.swp
+.idea/
+.vscode/
+
+# ========================
+# Design tools
+# ========================
+*.sketch/
+*.xd/
+*.fig/
+*.psd/
+*.ai/
+*.svg~      # versioni temporanee di SVG
+
+# ========================
+# Node / Build tools (se ci sono tool di build)
+# ========================
+node_modules/
+dist/
+build/
+
+# ========================
+# Misc
+# ========================
+*.bak
+*.zip
