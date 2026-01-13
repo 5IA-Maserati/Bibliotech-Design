@@ -7,7 +7,7 @@ This repository serves as the central place for UI/UX assets, design system comp
 ```bash
 Bibliotech-Design/
 ├─ assets/ # Images, icons, illustrations
-├─ components/ # UI components, Sketch/Figma/Adobe XD templates
+├─ components/ # UI components, Sketch/Figma/Adobe templates
 ├─ prototypes/ # Interactive prototypes
 ├─ docs/ # Documentation, style guides, workflow instructions
 └─ README.md
